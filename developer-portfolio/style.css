@@ -65,3 +65,19 @@ h1 {
     border-radius: 5px;
     box-shadow: 10px 10px 40px gray;
 }
+
+#web-dev-exprience {
+    border-left: 7px solid;
+    border-image: linear-gradient(blue, cyan);
+    border-image-slice: 1;
+}
+
+#full-stack-exprience {
+    border-left: 7px solid;
+    border-image: linear-gradient(salmon, tomato);
+    border-image-slice: 1;
+}
+
+footer p {
+    text-align: center;
+}
