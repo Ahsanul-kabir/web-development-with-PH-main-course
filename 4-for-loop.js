@@ -1,3 +1,5 @@
+// 18_5-4 For loop, how for loop works, while vs for loop
+
 // var roastGiven = 0;
 // while(roastGiven < 7){
 //     console.log('Roast den, please!');
@@ -6,8 +8,6 @@
 
 // console.log('running a for loop');
 // for (var roastGiven = 0; roastGiven < 7; roastGiven++) {
-// 18_5-4 For loop, how for loop works, while vs for loop
-
 //     console.log('Roast den, please!!');
 //     console.log(roastGiven);
 // }
