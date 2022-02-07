@@ -21,19 +21,19 @@
                 quis vero repellendus explicabo aliquam?</p>
         </article>
         <article>
-            <h3>Welcome to my awsome blow - 2</h3>
+            <h3 id="second-title">Welcome to my awsome blow - 2</h3>
             <p>2- Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla officia voluptas modi exercitationem
                 perspiciatis deserunt consectetur vel quam. Nobis possimus nesciunt delectus cupiditate fuga officia
                 quis vero repellendus explicabo aliquam?</p>
         </article>
         <article>
-            <h3>Welcome to my awsome blow - 3</h3>
+            <h3 id="third-title">Welcome to my awsome blow - 3</h3>
             <p>3- Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla officia voluptas modi exercitationem
                 perspiciatis deserunt consectetur vel quam. Nobis possimus nesciunt delectus cupiditate fuga officia
                 quis vero repellendus explicabo aliquam?</p>
         </article>
         <article>
-            <h3>Welcome to my awsome blow - 4</h3>
+            <h3 id="fourth-title">Welcome to my awsome blow - 4</h3>
             <p>4- Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla officia voluptas modi exercitationem
                 perspiciatis deserunt consectetur vel quam. Nobis possimus nesciunt delectus cupiditate fuga officia
                 quis vero repellendus explicabo aliquam?</p>
@@ -48,13 +48,23 @@
         // access every h3's text.
         const blogTitles = document.getElementsByTagName('h3')
         for (const h3 of blogTitles) {
-            console.log(h3.innerText)
+            // console.log(h3.innerText)
         }
 
         const blogDetails = document.getElementsByTagName('p')
         for (const p of blogDetails) {
-            console.log(p.innerText)
+            // console.log(p.innerText)
         }
+
+        // explore getElementById
+        const secondTitle = document.getElementById('second-title');
+        secondTitle.style.textAlign = 'center';
+
+        const thirdTitle = document.getElementById('third-title');
+        thirdTitle.innerText = 'Text updated by JS'
+        thirdTitle.style.backgroundColor = 'salmon';
+        thirdTitle.style.padding = '10px';
+        thirdTitle.style.marginLeft = '20px'
     </script>
 </body>
 
