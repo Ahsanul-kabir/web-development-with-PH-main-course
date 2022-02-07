@@ -14,30 +14,35 @@
     </header>
 
     <main>
-        <article>
-            <h3>Welcome to my awsome blow - 1</h3>
-            <p>1-Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla officia voluptas modi exercitationem
-                perspiciatis deserunt consectetur vel quam. Nobis possimus nesciunt delectus cupiditate fuga officia
-                quis vero repellendus explicabo aliquam?</p>
-        </article>
-        <article>
-            <h3 id="second-title">Welcome to my awsome blow - 2</h3>
-            <p>2- Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla officia voluptas modi exercitationem
-                perspiciatis deserunt consectetur vel quam. Nobis possimus nesciunt delectus cupiditate fuga officia
-                quis vero repellendus explicabo aliquam?</p>
-        </article>
-        <article>
-            <h3 id="third-title">Welcome to my awsome blow - 3</h3>
-            <p>3- Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla officia voluptas modi exercitationem
-                perspiciatis deserunt consectetur vel quam. Nobis possimus nesciunt delectus cupiditate fuga officia
-                quis vero repellendus explicabo aliquam?</p>
-        </article>
-        <article>
-            <h3 id="fourth-title">Welcome to my awsome blow - 4</h3>
-            <p>4- Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla officia voluptas modi exercitationem
-                perspiciatis deserunt consectetur vel quam. Nobis possimus nesciunt delectus cupiditate fuga officia
-                quis vero repellendus explicabo aliquam?</p>
-        </article>
+        <section class="blogs">
+            <article class='blog'>
+                <h3>Welcome to my awsome blow - 1</h3>
+                <p>1-Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla officia voluptas modi exercitationem
+                    perspiciatis deserunt consectetur vel quam. Nobis possimus nesciunt delectus cupiditate fuga officia
+                    quis vero repellendus explicabo aliquam?</p>
+            </article>
+            <article id="second-blog" class='blog'>
+                <h3 id="second-title">Welcome to my awsome blow - 2</h3>
+                <p>2- Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla officia voluptas modi
+                    exercitationem
+                    perspiciatis deserunt consectetur vel quam. Nobis possimus nesciunt delectus cupiditate fuga officia
+                    quis vero repellendus explicabo aliquam?</p>
+            </article>
+            <article class='blog'>
+                <h3 id="third-title">Welcome to my awsome blow - 3</h3>
+                <p>3- Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla officia voluptas modi
+                    exercitationem
+                    perspiciatis deserunt consectetur vel quam. Nobis possimus nesciunt delectus cupiditate fuga officia
+                    quis vero repellendus explicabo aliquam?</p>
+            </article>
+            <article class='blog'>
+                <h3 id="fourth-title">Welcome to my awsome blow - 4</h3>
+                <p>4- Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla officia voluptas modi
+                    exercitationem
+                    perspiciatis deserunt consectetur vel quam. Nobis possimus nesciunt delectus cupiditate fuga officia
+                    quis vero repellendus explicabo aliquam?</p>
+            </article>
+        </section>
     </main>
 
     <script>
@@ -65,6 +70,17 @@
         thirdTitle.style.backgroundColor = 'salmon';
         thirdTitle.style.padding = '10px';
         thirdTitle.style.marginLeft = '20px'
+
+        // explore getElementsByClassName
+        const blogs = document.getElementsByClassName('blog');
+        for (const blog of blogs) {
+            blog.style.border = '2px solid orange';
+            blog.style.borderRadius = '10px';
+            blog.style.margin = '5px';
+            blog.style.padding = '5px';
+        }
+        // document.querySelector('.blog')
+        // document.querySelectorAll('.blog')
     </script>
 </body>
 
