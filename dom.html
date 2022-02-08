@@ -14,29 +14,39 @@
     </header>
 
     <main>
-        <section class="blogs">
+        <section id="blogs" class="blogs">
+            <header>
+                <h2>Blog List</h2>
+                <ul id="blog-list">
+                    <li>Blog-1</li>
+                    <li>Blog-2</li>
+                    <li>Blog-3</li>
+                    <li>Blog-4</li>
+                </ul>
+            </header>
+
             <article class='blog'>
-                <h3>Welcome to my awsome blow - 1</h3>
+                <h3>Welcome to my awesome blow - 1</h3>
                 <p>1-Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla officia voluptas modi exercitationem
                     perspiciatis deserunt consectetur vel quam. Nobis possimus nesciunt delectus cupiditate fuga officia
                     quis vero repellendus explicabo aliquam?</p>
             </article>
             <article id="second-blog" class='blog'>
-                <h3 id="second-title">Welcome to my awsome blow - 2</h3>
+                <h3 id="second-title">Welcome to my awesome blow - 2</h3>
                 <p>2- Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla officia voluptas modi
                     exercitationem
                     perspiciatis deserunt consectetur vel quam. Nobis possimus nesciunt delectus cupiditate fuga officia
                     quis vero repellendus explicabo aliquam?</p>
             </article>
             <article class='blog'>
-                <h3 id="third-title">Welcome to my awsome blow - 3</h3>
+                <h3 id="third-title">Welcome to my awesome blow - 3</h3>
                 <p>3- Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla officia voluptas modi
                     exercitationem
                     perspiciatis deserunt consectetur vel quam. Nobis possimus nesciunt delectus cupiditate fuga officia
                     quis vero repellendus explicabo aliquam?</p>
             </article>
             <article class='blog'>
-                <h3 id="fourth-title">Welcome to my awsome blow - 4</h3>
+                <h3 id="fourth-title">Welcome to my awesome blow - 4</h3>
                 <p>4- Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla officia voluptas modi
                     exercitationem
                     perspiciatis deserunt consectetur vel quam. Nobis possimus nesciunt delectus cupiditate fuga officia
@@ -70,6 +80,34 @@
         thirdTitle.style.backgroundColor = 'salmon';
         thirdTitle.style.padding = '10px';
         thirdTitle.style.marginLeft = '20px'
+
+
+        // create and add element by using JS
+        const li = document.createElement('li') // create the element
+        li.innerText = 'Blog-5';
+        ul = document.getElementById('blog-list') // where to
+        ul.appendChild(li) // append new element
+
+
+        // add article
+        const article = document.createElement('article')
+        article.classList.add('blog')
+        // const h3 = document.createElement('h3')
+        // h3.innerText = 'Welcome to my awesome blow - 5'
+        // const p = document.createElement('p')
+        // p.innerText =
+        //     '5- Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla officia voluptas modi exercitationem perspiciatis deserunt consectetur vel quam. Nobis possimus nesciunt delectus cupiditate fuga officia quis vero repellendus explicabo aliquam?'
+        // article.appendChild(h3)
+        // article.appendChild(p)
+
+        article.innerHTML =
+            `
+        <h3>Welcome to my awesome blow - 5</h3>
+        <p>5- Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla officia voluptas modi exercitationem perspiciatis deserunt consectetur vel quam. Nobis possimus nesciunt delectus cupiditate fuga officia quis vero repellendus explicabo aliquam?</p>`
+
+        const blogSection = document.getElementById('blogs') //pareant of article
+        blogSection.appendChild(article)
+
 
         // explore getElementsByClassName
         const blogs = document.getElementsByClassName('blog');
