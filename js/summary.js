@@ -20,7 +20,9 @@ harum.innerHTML = `
     </div>
 `
 
+// remove child
 const friends = document.getElementById('friends');
+// console.log(friends.childNodes); // sob element paiya jabo inside text soho
 // console.log(friends.children);
 const fifth = friends.children[4];
 console.log(fifth);
