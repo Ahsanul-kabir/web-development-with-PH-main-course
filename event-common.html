@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>event</title>
+</head>
+
+<body>
+    <p id="clicking-method"></p>
+    <input type="text" id="name-field">
+    <button id="update-name">Update</button>
+    <button onclick="handleJustClick()">Just Function</button>
+    <button id="handle-event">Direct and Even Listener</button>
+
+    <script>
+        //using function
+        function handleJustClick() {
+            const p = document.getElementById('clicking-method');
+            p.innerText = 'set by using function';
+        }
+
+
+        // direct
+        document.getElementById('handle-event').addEventListener('click', function () {
+            const p = document.getElementById('clicking-method');
+            p.innerText = 'set by using direct event listener';
+        });
+
+        // direct with input field and update button
+        document.getElementById('update-name').addEventListener('click', function () {
+            const nameField = document.getElementById('name-field');
+            nameField.innerText = 'set by using direct event listener';
+
+            const p = document.getElementById('clicking-method');
+            p.innerText = nameField.value;
+            nameField.value = '';
+        })
+    </script>
+</body>
+
+</html>
