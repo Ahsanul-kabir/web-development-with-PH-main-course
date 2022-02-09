@@ -32,8 +32,6 @@
         // direct with input field and update button
         document.getElementById('update-name').addEventListener('click', function () {
             const nameField = document.getElementById('name-field');
-            nameField.innerText = 'set by using direct event listener';
-
             const p = document.getElementById('clicking-method');
             p.innerText = nameField.value;
             nameField.value = '';
