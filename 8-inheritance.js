@@ -48,4 +48,8 @@ const alia = new StudentCare('Alia Bhatt', 'Mumbai');
 const ash = new NeptuneDev('Ash', 'Mumbai', 'Android studio');
 ash.releaseApp('1.4.5');
 console.log(ash.name);
+
+
 // console.log(ash.__proto__) // __proto__ is a property of object
+// console.log(ash.__proto__.__proto__); // __proto__ is a property of object
+// console.log(ash.hasOwnProperty('name')); // true
