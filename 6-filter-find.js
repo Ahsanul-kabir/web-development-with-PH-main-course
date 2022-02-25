@@ -18,3 +18,5 @@ const blacks = products.filter(product => product.color == 'pink');
 
 const whiteItem = products.find(product => product.color == 'black');
 console.log(whiteItem);
+
+// filter methods not find any thing = [], find methods not find any thing = undefined
