@@ -18,5 +18,18 @@ function loadPosts() {
 // loadPosts
 
 function displayUsers(data) {
-    console.log(data);
+    // console.log(data[name]);
+    // for (const user of data) {
+    //     console.log(user.name);
+    // }
+    // or // data.map(user => console.log(user.name))
+
+    const ul = document.getElementById('users');
+    // console.log(data);
+    for (const user of data) {
+        // console.log(user);
+        const li = document.createElement('li');
+        li.innerText = `name: ${user.name} email: ${user.email}`;
+        ul.appendChild(li);
+    }
 }
