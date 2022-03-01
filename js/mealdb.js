@@ -1,9 +1,11 @@
+document.getElementById('error-message').style.display = 'none';
+
 const searchFood = () => {
     const searchField = document.getElementById('search-field');
     const searchText = searchField.value;
     // clear data
     searchField.value = '';
-
+    document.getElementById('error-message').style.display = 'none';
     if (searchText == '') {
         // please write something to display
     }
@@ -13,8 +15,11 @@ const searchFood = () => {
         fetch(url)
             .then(res => res.json())
             .then(data => displaySearchResult(data.meals))
-            .catch(error => displayError(error));
+            .catch(error => displayError(error));  // catch error
     }
+}
+const displayError = error => {
+    document.getElementById('error-message').style.display = 'block';
 }
 
 const displaySearchResult = meals => {
@@ -50,6 +55,7 @@ const loadMealDetail = mealId => {
 const displayMealDetail = meal => {
     console.log(meal);
     const mealDetails = document.getElementById('meal-details');
+    mealDetails.textContent = '';
     const div = document.createElement('div');
     div.classList.add('card');
     div.innerHTML = `
