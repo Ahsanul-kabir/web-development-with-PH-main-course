@@ -15,11 +15,34 @@ const displayCountries = counties => {
         const div = document.createElement('div');
         const h3 = document.createElement('h3');
         div.classList.add('country')
-        h3.innerText = country.name.common;
-        div.appendChild(h3);
-        const p = document.createElement('p');
-        p.innerText = `Capital: ${country.capital}`;
-        div.appendChild(p);
+
+        div.innerHTML = `
+            <h3>${country.name.common}</h3>
+            <p>Capital: ${country.capital}</p>
+            <button onclick="loadCountryByName('${country.name.common}')">Details</button>`
+
+        // h3.innerText = country.name.common;
+        // div.appendChild(h3);
+        // const p = document.createElement('p');
+        // p.innerText = `Capital: ${country.capital}`;
+        // div.appendChild(p);
         countriesDiv.appendChild(div);
     });
+}
+
+const loadCountryByName = name => {
+    const url = `https://restcountries.com/v2/name/${name}`;
+    fetch(url)
+        .then(res => res.json())
+        .then(data => displayCountryDetail(data[0]));
+}
+
+const displayCountryDetail = country => {
+    console.log(country);
+    const countryDiv = document.getElementById('country-detail');
+    countryDiv.innerHTML = `
+        <h5>${country.name}</h4>
+        <p>population: ${country.population}</p>
+        <img width="200px" src="${country.flag}">
+    `
 }
