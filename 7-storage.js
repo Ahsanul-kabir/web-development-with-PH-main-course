@@ -11,3 +11,6 @@ const addToLocalStorage = () => {
     idInput.value = '';
     valueInput.value = '';
 }
+
+// Some times need for set Item -> JSON.stringify(obj);
+// Some times need for get Item -> JSON.parse(obj);
