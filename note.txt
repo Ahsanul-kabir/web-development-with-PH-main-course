@@ -48,3 +48,7 @@ ex. https://mail.google.com/mail/u/1/#settings/general
 website এ user যদি কোন interaction করে তাহলে website এর ভিতরে অবস্থা changes হতে পারে তাকে state বলে পারে । ex. login or not, add to cart, main read or unread.
 
 
+** 44-8 Install React App and explore folder structure and edit
+-- react app make and full react app files overview
+
+
