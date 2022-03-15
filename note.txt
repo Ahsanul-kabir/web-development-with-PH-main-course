@@ -43,3 +43,8 @@ ex. https://mail.google.com/mail/u/1/#settings/general
 + html e title tag is one kind of Attribute, and JS এ Attribute গুলোকে property বলে react sort করে props বলে ।
 
 
+** 44-7 Website state, state management, purpose of state
+--
+website এ user যদি কোন interaction করে তাহলে website এর ভিতরে অবস্থা changes হতে পারে তাকে state বলে পারে । ex. login or not, add to cart, main read or unread.
+
+
