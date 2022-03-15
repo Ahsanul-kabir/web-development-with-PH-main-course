@@ -11,3 +11,21 @@
         4. stand alone Component, likes footer, header etc.
         more source: https://github.com/Ahsanul-kabir/web-day-46-mordern-front-end-core-concept/tree/main/2.%20Web%20component%2C%204%20types%20of%20component%2C%20identify%20component
 
+
+** 44-3 Template, dynamically create HTML elements based on data
+-- raw code code visit to understand
+
+** 44-4 Single Page Application (SPA), Performance benefit
+--
+Advantages of Single Page Application
+    1. Fast and Flexible
+    2. User-friendly UX
+    3. Caching Power
+    4. Bug Tracing with Browser
+    5. Simplicity and Features
+Disadvantages of Single Page Application
+    1. Browser history : SPAs don’t reload the entire page and update the URL & resources of web page. So it is clear that there can’t be any browsing history by which we can’t go back or forth.
+
+    2. SEO optimization
+    3. Security issues
+    4. JavaScript Dependency in Browser
