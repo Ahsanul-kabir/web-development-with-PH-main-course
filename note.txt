@@ -35,3 +35,11 @@ Disadvantages of Single Page Application
 SPA have route by the defend of route user can find user's information. route এর উপর নির্ভর করে same page এর মধ্যে website এর বিভিন্ন অংশগুলোকে দেখায় ।
 
 ex. https://mail.google.com/mail/u/1/#settings/general
+
+
+** 44-6 Explore destructuring and send data to html elements using props
+--
++ array destructuring, const {name, flags} = country;
++ html e title tag is one kind of Attribute, and JS এ Attribute গুলোকে property বলে react sort করে props বলে ।
+
+
