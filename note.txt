@@ -1,2 +1,13 @@
 ** 44-1 Module overview and modern application core parts
 -- overview only
+
+
+** 44-2 Web component, 4 types of component, identify component
+--
+4 types of component likes,
+        1. Similar in look, different in data
+        2. Container Component likes অনেক গুলো Component কে একসাথে করে Container বানানো
+        3. No pattern but break down for working purpose
+        4. stand alone Component, likes footer, header etc.
+        more source: https://github.com/Ahsanul-kabir/web-day-46-mordern-front-end-core-concept/tree/main/2.%20Web%20component%2C%204%20types%20of%20component%2C%20identify%20component
+
