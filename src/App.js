@@ -2,8 +2,12 @@ import logo from './logo.svg';
 import './App.css';
 
 const name = 'Ahsanul Kabir';
-const singer = { name: 'Dr. Mahfuz', job: 'Singer' };
-const singer2 = { name: 'Eva Rahman', job: 'Singer' };
+const singers = [
+  { name: 'Dr. Mahfuz', job: 'Singer' },
+  { name: 'Eva Rahman', job: 'Singer2' },
+  { name: 'Agun', job: 'sopno' },
+  { name: 'shuvro', job: 'pathor' }
+]
 
 const singerStyle = {
   color: 'white',
@@ -11,12 +15,25 @@ const singerStyle = {
 }
 
 function App() {
+  const nayoks = ['Rubel', 'BappaDa', 'Kuber', 'Jashim', 'Salman Shah', 'Riyaz', 'Anwar'];
   return (
-    <div className="App">
-      <Person name='Rubel' naika='Mousumi' />
+    <div className="App" >
+      {
+        nayoks.map(nayok => <li>{nayok}</li>)
+      }
+
+      {/* {
+        nayoks.map(nayok => <Person name={nayok}></Person>)
+      } */}
+
+      {
+        singers.map(singer => <Person name={singer.name}></Person>)
+      }
+
+      {/* < Person name={nayoks[0]} naika='Mousumi' />
       <Person name='BappaRaz' naika='Cheka'></Person>
       <Person name='Kuber Maji' naika='Kopila' />
-      <Person />
+      <Person /> */}
       <h5>New Component...YAY</h5>
       <Friends movie='Singum' phone='0177' />
       <Friends />
@@ -28,7 +45,7 @@ function Person(props) {
   return (
     <div className='person'>
       <h1>{props.name || 'Dipjol'}</h1>
-      <p>Naika : {props.naika || 'Sokina Khatun'}</p>
+      {/* <p>Naika : {props.naika || 'Sokina Khatun'}</p> */}
     </div>
 
     /*     <>

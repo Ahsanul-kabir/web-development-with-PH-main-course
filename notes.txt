@@ -26,3 +26,7 @@
 + In html we can say Attributes, but in react we call it Properties(props).
 + using Properties pass props in components
 + similar in loop differ in data visit
+
+
+** 45-5 (advanced) Create multiple components from an array of objects
+-- array and object pass as a props in component
