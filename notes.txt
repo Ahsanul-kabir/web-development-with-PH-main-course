@@ -2,3 +2,14 @@
 --
 + Create React App
 + https://reactjs.org/ = 1 page brief
+
+
+** 45-2 JSX, Dynamic content, Dynamic Style in React
+--
++ JSX stands for “JavaScript XML”. It is a syntax extension for JavaScript.". Allow us to write html in reactJs. writing and adding html in reactJs easier.
++ class(html) = className(reactJs)
++ 3 ways of css style file add
+    1. import css file in js file
+    2. add css file in html file
+    3. inline css file in html file
++ stye is object in js and reactjs
