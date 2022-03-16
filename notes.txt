@@ -1,0 +1,4 @@
+** 45-6 Concept Recap, JSX, components, props, display array of objects
+--
++ make component and pass array of objects as props recap
++ JSX is a syntax extension to JavaScript that allows us to write HTML inside of JavaScript
