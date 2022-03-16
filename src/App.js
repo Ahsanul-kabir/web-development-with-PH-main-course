@@ -13,22 +13,22 @@ const singerStyle = {
 function App() {
   return (
     <div className="App">
-      <Person />
-      <Person />
-      <Person />
+      <Person name='Rubel' naika='Mousumi' />
+      <Person name='BappaRaz' naika='Cheka'></Person>
+      <Person name='Kuber Maji' naika='Kopila' />
       <Person />
       <h5>New Component...YAY</h5>
-      <Friends />
+      <Friends movie='Singum' phone='0177' />
       <Friends />
     </div>
   );
 }
 
-function Person() {
+function Person(props) {
   return (
     <div className='person'>
-      <h1>Sakib Al Hasan</h1>
-      <p>Profession : Cricketer</p>
+      <h1>{props.name || 'Dipjol'}</h1>
+      <p>Naika : {props.naika || 'Sokina Khatun'}</p>
     </div>
 
     /*     <>
@@ -38,11 +38,11 @@ function Person() {
   )
 }
 
-function Friends() {
+function Friends(props) {
   return (
     <div className='container'>
-      <h1>Ajan Dev Gan</h1>
-      <p>Actor</p>
+      <h1>{props.movie || 'Khiladi'}</h1>
+      <p>Phone: {props.phone}</p>
     </div>
   )
 }

@@ -19,3 +19,10 @@
 --
 + JavaScript function return only only one return statement. So we should use div or fragment
 + component use in App() function
+
+
+** 45-4 Pass dynamic data to components, props in react
+--
++ In html we can say Attributes, but in react we call it Properties(props).
++ using Properties pass props in components
++ similar in loop differ in data visit
