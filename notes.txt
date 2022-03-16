@@ -1,0 +1,4 @@
+** 45-1: Module Introduction, Create React App, 6 core concepts
+--
++ Create React App
++ https://reactjs.org/ = 1 page brief
