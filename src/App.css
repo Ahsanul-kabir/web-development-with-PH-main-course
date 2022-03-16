@@ -41,5 +41,14 @@
   color:red;
   background-color: aquamarine;
   padding: 20px;
+  margin:20px;
+  border: 1px solid purple;
   border-radius: 20px;
+}
+.person{
+  background-color:khaki;
+  border:3px solid purple;
+  padding: 20px;
+  margin: 10px;
+  border-radius:10px
 }

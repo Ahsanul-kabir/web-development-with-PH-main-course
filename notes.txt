@@ -13,3 +13,9 @@
     2. add css file in html file
     3. inline css file in html file
 + stye is object in js and reactjs
+
+
+** 45-3 Create Component, return HTML from a component
+--
++ JavaScript function return only only one return statement. So we should use div or fragment
++ component use in App() function
