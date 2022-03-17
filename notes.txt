@@ -2,3 +2,10 @@
 --
 + make component and pass array of objects as props recap
 + JSX is a syntax extension to JavaScript that allows us to write HTML inside of JavaScript
+
+
+** 45-7 (advanced) State, component state hook and set state method
+--
++ useState hook learned and how set state variable
++ useState(33) // 33 is initial state or initial value
++ onClick handler using
