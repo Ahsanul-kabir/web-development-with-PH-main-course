@@ -1,0 +1,11 @@
+** 45-9 Module Summary React Core Concepts recap
+--
++ Summary
++ React এর 6 রত্ন
+    1. JSX
+    2. Component
+    3. props
+    4. state
+    5. even handlers
+    6. external data load
+
