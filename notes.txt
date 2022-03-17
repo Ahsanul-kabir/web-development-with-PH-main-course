@@ -6,3 +6,9 @@
 --
 + display the results us Component
 + Folder structure make for react projects
+
+** 46-3 React Extension Pack and component with css file
+--
++ react component folder structure organization learn
++ rsc = shortcut for make component
++ components import in App.js learn
