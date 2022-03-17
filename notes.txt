@@ -1,3 +1,8 @@
 ** 46-1 Module Introduction, load countries using useEffect
 --
 + load data using useEffect then display the results
+
+** 46-2 Display countries in a simple way, Folder Structure
+--
++ display the results us Component
++ Folder structure make for react projects
