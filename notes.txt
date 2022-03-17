@@ -9,3 +9,9 @@
 + useState hook learned and how set state variable
 + useState(33) // 33 is initial state or initial value
 + onClick handler using
+
+
+** 45-8 (advanced) Load dynamic data, API call useEffect integrate state
+--
++ data fetch using useEffect() hook
++ loaded data display
