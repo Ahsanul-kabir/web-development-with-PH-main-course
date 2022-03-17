@@ -1,0 +1,3 @@
+** 46-1 Module Introduction, load countries using useEffect
+--
++ load data using useEffect then display the results
