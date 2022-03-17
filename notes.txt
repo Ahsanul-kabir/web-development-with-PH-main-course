@@ -12,3 +12,8 @@
 + react component folder structure organization learn
 + rsc = shortcut for make component
 + components import in App.js learn
+
+
+** 46-4 Components inside the folder structure and connect them
++ data length visit in structured component
++ connect components in App.js
