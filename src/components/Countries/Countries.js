@@ -17,7 +17,7 @@ const Countries = () => {
             <h2>Hello Mello Yello Gello from Countries: {countries.length}</h2>
             <div>
                 {
-                    countries.map(country => <Country name={country.name.common} population={country.population} area={country.area} />)
+                    countries.map(country => <Country country={country} />)
                 }
             </div>
         </div>

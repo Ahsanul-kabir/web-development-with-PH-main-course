@@ -23,3 +23,9 @@
 --
 + fetch data in "Countries component" & get data same component and pass via Attribute
 + show information in "Country component" using props
+
+
+** 46-6 (advanced) Pass multiple data to a child component
+--
++ pass all data from Parent(Countries) to child component(Country)
++ show information in "Country component" using array destructuring methods
