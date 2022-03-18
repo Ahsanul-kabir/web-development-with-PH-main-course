@@ -17,3 +17,9 @@
 ** 46-4 Components inside the folder structure and connect them
 + data length visit in structured component
 + connect components in App.js
+
+
+** 46-5 Create child component and pass data via props
+--
++ fetch data in "Countries component" & get data same component and pass via Attribute
++ show information in "Country component" using props

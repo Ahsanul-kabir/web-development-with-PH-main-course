@@ -1,9 +1,13 @@
 import React from 'react';
+import './Country.css'
 
-const Country = () => {
+const Country = (props) => {
+    // console.log(props);
     return (
-        <div>
-            <h1>Name: </h1>
+        <div className='country'>
+            <h1>Name: {props.name}</h1>
+            <p>Population {props.population}</p>
+            <p><small>Area: {props.area}</small></p>
         </div>
     );
 };
