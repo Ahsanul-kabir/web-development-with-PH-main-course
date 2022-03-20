@@ -35,3 +35,6 @@
 --
 + unique key for mapping components implemented
 + little css grid layout apply in "Country component"
+
+
+** 46-8 Build your react app and host your react app in Netlify
