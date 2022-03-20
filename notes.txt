@@ -29,3 +29,9 @@
 --
 + pass all data from Parent(Countries) to child component(Country)
 + show information in "Country component" using array destructuring methods
+
+
+** 46-7 (advanced) add unique key for mapping components
+--
++ unique key for mapping components implemented
++ little css grid layout apply in "Country component"
