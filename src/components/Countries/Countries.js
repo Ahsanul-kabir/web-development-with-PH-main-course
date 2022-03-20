@@ -15,7 +15,7 @@ const Countries = () => {
     return (
         <div>
             <h2>Hello Mello Yello Gello from Countries: {countries.length}</h2>
-            <div className="countries-container">
+            <div className="countries-container bg-info">
                 {
                     countries.map(country => <Country country={country} key={country.cca3} />)
                 }

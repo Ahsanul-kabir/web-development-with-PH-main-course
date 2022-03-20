@@ -38,3 +38,10 @@
 
 
 ** 46-8 Build your react app and host your react app in Netlify
+
+
+** 46-9 Module Summary and recap use bootstrap in React
+--
++ use bootstrap in react bangla system
++ Summary
++ header and footer added simplest
