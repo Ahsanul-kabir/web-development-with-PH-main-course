@@ -1,0 +1,8 @@
+** 47-1 Module Introduction Create React App under the hood
+--
++ node -v
++ npm -v
++ npm = node package manager (npm is a package manager for node.js)
++ npx = node package execute (project আছে কি নাই check করে রা থাকলে project install করে)
++ create react app = CLI(command line interface)এর tool এর মাধ্যমে React এপ তৈরি করা যায়
++ package.json এর মধ্যে package how থাকে, index.js এর document.getElementById এর মধ্যে কাজ সব মেনেজ হয় ।
