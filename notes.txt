@@ -35,3 +35,11 @@
         console.log(steps);
     }, [steps]);
     //  [steps] হল dependencies list
+
+
+** 47-5 How React Hook works, send state via props , props vs state
+--
++ hook is one kind of function. Hooks make React so much better because you have simpler code that implements similar functionalities faster and more effectively.
++ hooks likes, useState, useEffect, useContext, useReducer, useCallback, useMemo, useRef, useImperativeHandle, useLayoutEffect, useDebugValue
++ props read only and can not be modified
++ state changes can be asynchronous and state can be change using this.setState()
