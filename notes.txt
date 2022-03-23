@@ -43,3 +43,4 @@
 + hooks likes, useState, useEffect, useContext, useReducer, useCallback, useMemo, useRef, useImperativeHandle, useLayoutEffect, useDebugValue
 + props read only and can not be modified
 + state changes can be asynchronous and state can be change using this.setState()
++ যেই জায়গায় state থাকে ঐ component কে stateful component বলে
