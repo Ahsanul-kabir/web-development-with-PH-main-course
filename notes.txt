@@ -3,6 +3,28 @@
 + node -v
 + npm -v
 + npm = node package manager (npm is a package manager for node.js)
-+ npx = node package execute (project আছে কি নাই check করে রা থাকলে project install করে)
++ npx = node package execute (project আছে কি নাই check করে না থাকলে project install করে)
 + create react app = CLI(command line interface)এর tool এর মাধ্যমে React এপ তৈরি করা যায়
 + package.json এর মধ্যে package how থাকে, index.js এর document.getElementById এর মধ্যে কাজ সব মেনেজ হয় ।
+
+
+** 47-2 What is JSX, React Component, babel transpiler
+--
++ https://reactjs.org/docs/introducing-jsx.html
++ https://reactjs.org/docs/jsx-in-depth.html
++ Babel হল free and open-source JavaScript Transpiler(Translate Compiler). যা ECMAScript newer version কে previous version এ convert করে কাজের সুবিধার জন্য ।
++
+
+** 47-3 Components and how props works, unidirectional data flow
+--
++ https://reactjs.org/docs/components-and-props.html
++ Components are independent and reusable bits of code. They serve the same purpose as JavaScript functions, but work in isolation and return HTML.
++ Components come in two types, Class components and Function components, We will concentrate on Function components.
++ React follow unidirectional data flow. Meaning, the data flows from parent to child.
++ props.price = 1400 // not possible because of, props is read only
++ props drilling = props only follow data flows from parent to child this is call props drilling.
+
+
+** 47-4 (advanced) How states works, asynchronous, console state
+--
++ const [st]
