@@ -27,4 +27,11 @@
 
 ** 47-4 (advanced) How states works, asynchronous, console state
 --
-+ const [st]
++ const [steps, setSteps] = useState(0);
+    // useState(0), here "0" is initial state value
+    // setSteps একটা Action কে dispatch করে বা delivery করে, setSteps কোন steps এর value change হলে UI কে Re-render করে এবং সাথে সাথে steps এর value পরিবর্তন করে দেয় ।
++ setSteps হল asynchronous ভাবে কাজ করে
++   useEffect(() => {
+        console.log(steps);
+    }, [steps]);
+    //  [steps] হল dependencies list
