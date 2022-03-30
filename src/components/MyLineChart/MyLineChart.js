@@ -49,6 +49,7 @@ const MyLineChart = () => {
     return (
         <LineChart width={400} height={500} data={data}>
             <Line type="monotone" dataKey="price" />
+            <Line type="monotone" dataKey="pv" />
             <XAxis dataKey="name" />
             <YAxis />
             <Tooltip />
