@@ -6,6 +6,8 @@ import Friends from './components/Friends/Friends';
 import Header from './components/Header/Header';
 import Home from './components/Home/Home';
 import NotFound from './components/NotFound/NotFound';
+import Posts from './components/Posts/Posts';
+import PostDetail from './PostDetail/PostDetail';
 
 function App() {
   return (
@@ -16,6 +18,11 @@ function App() {
         <Route path="/home" element={<Home />} />
         <Route path="/friends" element={<Friends />} />
         <Route path="/friends/:friendId" element={<FriendDetail />} />
+        {/* nested route start*/}
+        <Route path="/posts" element={<Posts />}>
+          <Route path=":postId" element={<PostDetail />} />
+        </Route>
+        {/* nested route end*/}
         <Route path='/about' element={<About />} />
         <Route path='*' element={<NotFound />} />
       </Routes>
