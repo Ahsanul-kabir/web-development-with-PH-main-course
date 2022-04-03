@@ -9,7 +9,7 @@ const Orders = () => {
     const [cart, setCart] = useCart(products);
     return (
         <div className='shop-container'>
-            <div className="products-container">
+            <div className="review-items-container">
                 {
                     cart.map(product => <ReviewItem
                         key={product.id}
@@ -18,7 +18,9 @@ const Orders = () => {
                 }
             </div>
             <div className="cart-container">
-                <Cart cart={cart}></Cart>
+                <Cart cart={cart}>
+
+                </Cart>
             </div>
         </div>
     );
