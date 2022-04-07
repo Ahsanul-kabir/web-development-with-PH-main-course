@@ -1,6 +1,6 @@
 import './App.css';
 import app from './firebase.init';
-import { getAuth, signInWithPopup, signOut, GithubAuthProvider, GoogleAuthProvider } from "firebase/auth";
+import { getAuth, signInWithPopup, signOut, GithubAuthProvider, GoogleAuthProvider, FacebookAuthProvider } from "firebase/auth";
 import { useState } from 'react';
 
 // Initialize Firebase Authentication and get a reference to the service
@@ -10,6 +10,7 @@ function App() {
   const [user, setUser] = useState({});
   const googleProvider = new GoogleAuthProvider();
   const githubProvider = new GithubAuthProvider();
+  const facebookProvider = new FacebookAuthProvider();
 
   const handleGoogleSignIn = () => {
     signInWithPopup(auth, googleProvider)
@@ -42,6 +43,18 @@ function App() {
       });
   }
 
+  const handleFacebookSignIn = () => {
+    signInWithPopup(auth, facebookProvider)
+      .then(result => {
+        const user = result.user;
+        setUser(user);
+        console.log(user);
+      })
+      .catch(error => {
+        console.error(error);
+      })
+  }
+
   return (
     <div className="App">
       {/* { condition ? true : flase} */}
@@ -51,6 +64,7 @@ function App() {
           <>
             <button onClick={handleGoogleSignIn}>Google Sign In</button>
             <button onClick={handleGithubSignIn}>Github Sign In</button>
+            <button onClick={handleFacebookSignIn}>Facebook Sign In</button>
           </>
       }
       <h2>Name: {user.displayName}</h2>
