@@ -1,0 +1,18 @@
+* 60-1 Module Overview and simple review of React
+--
+1. React Component, React is a library
+2. Library has more flexibility and Framework does not have flexibility.
+3. react has 4 types of components.
+    1 similler in look different in data
+    2
+4. Jsx = JavaScript xml= By using JSX we write code in JS
+5. name.css vs name.module.css (not share able with other components)
+6. create react app stuctures
+7. props = pass to another components
+8. to aboid props drilling we use Context API
+9. event handlers with arrow functions
+10. useState hook, useEffect hook
+11. react router dom
+12. firebase authentication
+13. custom hook
+
