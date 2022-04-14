@@ -1,0 +1,27 @@
+.services-title{
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 2rem;
+    text-align: center;
+    color: rgb(86, 86, 253);
+}
+.services-container{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap:20px;
+}
+
+
+/* make services response */
+
+@media screen and (max-width: 576px){
+    .services-container{
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+
+@media screen and (min-width: 577px) and (max-width:992px){
+    .services-container{
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
