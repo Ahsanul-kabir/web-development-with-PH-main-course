@@ -4,7 +4,8 @@
 //     razzak: 1,
 //     alomgir: 1,
 //     jashim: 1,
-//     jayed: 4
+//     jayed: 4,
+//     nepun: 1,
 // }
 
 let db = {};
@@ -15,24 +16,24 @@ const addToDb = item => {
     // db['alom'] = 1;
     // db[item] = 1;
     const storedTracker = localStorage.getItem('checka-tracker');
-    if(storedTracker){
+    if (storedTracker) {
         db = JSON.parse(storedTracker);
     }
 
 
-    if(item in db){
+    if (item in db) {
         db[item] = db[item] + 1;
     }
-    else{
+    else {
         db[item] = 1;
     }
 
     localStorage.setItem('checka-tracker', JSON.stringify(db));
 }
 
-const removeItem = item =>{
+const removeItem = item => {
     const storedTracker = localStorage.getItem('checka-tracker');
-    if(storedTracker){
+    if (storedTracker) {
         const storedObject = JSON.parse(storedTracker);
         delete storedObject[item];
         localStorage.setItem('checka-tracker', JSON.stringify(storedObject))
