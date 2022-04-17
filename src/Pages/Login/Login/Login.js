@@ -13,6 +13,7 @@ const Login = () => {
     const location = useLocation();
 
     let from = location.state?.from?.pathname || "/";
+    let errorElement;
 
     const handleSubmit = (event) => {
         event.preventDefault();
@@ -36,6 +37,12 @@ const Login = () => {
         navigate('/home');
     }
 
+    if (error) {
+        errorElement = <div>
+            <p className='text-danger'>Error: {error?.message}</p>
+        </div>
+    }
+
     return (
         <div className='container w-50 mx-auto'>
             <h2 className='text-primary text-center mt-2'>Please Login</h2>
@@ -49,6 +56,7 @@ const Login = () => {
                 <Button variant="primary" type="submit">
                     Submit
                 </Button>
+                {errorElement}
                 <p>New to Genius Car? <Link to="/register" className='text-danger pe-auto text-decoration-none' onClick={navigateRegister}>Please Register</Link> </p>
             </Form>
             <SocialLogin />
