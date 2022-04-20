@@ -1,0 +1,22 @@
+{
+  "name": "module-64-getting-started-with-node-express-and-api",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Ahsanul-kabir/web-development-with-PH-main-course-5.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Ahsanul-kabir/web-development-with-PH-main-course-5/issues"
+  },
+  "homepage": "https://github.com/Ahsanul-kabir/web-development-with-PH-main-course-5#readme",
+  "dependencies": {
+    "express": "^4.17.3"
+  }
+}
