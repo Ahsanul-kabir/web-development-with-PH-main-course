@@ -1,0 +1,26 @@
+** 64-1 Module overview Why Node, node vs other language
+
+1. What is Node.js ?
+-->
+As an asynchronous event-driven JavaScript runtime, Node.js is designed to build scalable network applications. In the following "hello world" example, many connections can be handled concurrently. Upon each connection, the callback is fired, but if there is no work to be done, Node.js will sleep.
+
+2. Node.js vs Javascript?
+-->
+Js:
+* Javascript is a programming language that is used for writing scripts on the website.
+* Javascript can only be run in the browsers
+* It is basically used on the client-side.
+* Javascript is capable enough to add HTML and play with the DOM.
+
+Node.js:
+* NodeJS is a Javascript runtime environment.
+* We can run Javascript outside the browser with the help of NodeJS.
+* It is mostly used on the server-side.
+* Nodejs does not have capability to add HTML tags.
+
+3. What is Node.js and why it is used?
+-->
+Node. js is primarily used for non-blocking, event-driven servers, due to its single-threaded nature. It's used for traditional web sites and back-end API services, but was designed with real-time, push-based architectures in mind.
+
+
+**
