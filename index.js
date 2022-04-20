@@ -4,6 +4,7 @@ const app = express();
 const port = process.env.port || 5000;
 
 app.use(cors());
+app.use(express.json())
 
 app.get('/', (req, res) => {
     res.send('Hello World!!');
@@ -25,6 +26,11 @@ app.get('/users/:id', (req, res) => {
     const id = parseInt(req.params.id)
     const user = users.find(user => user.id == id)
     res.send(user)
+})
+
+app.post('/user', (req, res) => {
+    console.log('request', req.body);
+    res.send('post method success')
 })
 
 app.get('fruits', (req, res) => {
