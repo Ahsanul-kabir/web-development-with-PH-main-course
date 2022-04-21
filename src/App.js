@@ -27,7 +27,8 @@ function App() {
     })
       .then(response => response.json())
       .then(data => {
-        console.log('Success:', data);
+        const newUsers = [...users, data]
+        setUsers(newUsers)
       })
   }
   return (
@@ -43,7 +44,7 @@ function App() {
 
       <ul>
         {
-          users.map(user => <li key={user.id}>{user.name} Email: {user.email}</li>)
+          users.map(user => <li key={user.id}>ID:{user.id} {user.name} Email: {user.email}</li>)
         }
       </ul>
     </div>
