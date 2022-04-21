@@ -1,4 +1,7 @@
 /**
+ * ----------------------
+ * Basic Server Setup
+ * ----------------------
  * 1. Create a folder (manual or mkdir)
  * 2. Open Command Line to the Folder
  * 3. npm init
@@ -14,4 +17,15 @@
  * 5. listen to port
  * 6. node index.js
  * 7. check your browser for that port
+ *
+ *
+ * -------------------
+ * get Request
+ * -------------------
+ * 1. cors middleware
+ * 2.
+ * -------------------
+ * post Request
+ * --------------------
+ * 1.
  */

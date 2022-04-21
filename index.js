@@ -29,6 +29,10 @@ app.get('/users', (req, res) => {
     res.send(users)
 })
 
+// app.get('/users', (req, res) => {
+//     res.send(users)
+// })
+
 app.get('/users/:id', (req, res) => {
     // console.log(req.params)
     const id = parseInt(req.params.id)
