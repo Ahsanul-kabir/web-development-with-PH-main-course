@@ -20,7 +20,9 @@ async function run() {
         const userCollection = client.db("foodExpress").collection("user");
 
         app.post('/user', (req, res) => {
-
+            const newUser = req.body;
+            console.log('Adding uew user', newUser);
+            res.send({ result: 'Success' });
         })
     }
     finally {
