@@ -18,6 +18,14 @@ const users = [
 ]
 
 app.get('/users', (req, res) => {
+    // console.log('query', req.query);
+    // filer by search query
+    //
+    if (req.query.name) {
+        const search = req.query.name.toLowerCase();
+        const matched = users.filter(user => user.name.toLowerCase().includes(search));
+        res.send(matched)
+    }
     res.send(users)
 })
 
@@ -30,6 +38,11 @@ app.get('/users/:id', (req, res) => {
 
 app.post('/user', (req, res) => {
     console.log('request', req.body);
+    const user = req.body;
+    user.id = users.length + 1;
+    users.push(user);
+    res.send(user);
+
     res.send('post method success')
 })
 
