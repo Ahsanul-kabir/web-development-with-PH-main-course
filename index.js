@@ -28,7 +28,7 @@ async function run() {
             res.send(users);
         })
 
-        // update user
+        // get a users
         app.get('/user/:id', async (req, res) => {
             const id = req.params.id;
             const query = { _id: ObjectId(id) };
@@ -41,6 +41,24 @@ async function run() {
             const newUser = req.body;
             console.log('Adding uew user', newUser);
             const result = await userCollection.insertOne(newUser);
+            res.send(result);
+        })
+
+        // update user
+        app.put('/user/:id', async (req, res) => {
+            const id = req.params.id;
+            const updatedUser = req.body;
+            const filter = { _id: ObjectId(id) }
+            const options = { upsert: true };
+
+            const updateDoc = {
+                $set: {
+                    name: updatedUser.name,
+                    email: updatedUser.email
+                },
+            };
+
+            const result = await userCollection.updateOne(filter, updateDoc, options);
             res.send(result);
         })
 
