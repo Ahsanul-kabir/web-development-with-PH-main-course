@@ -12,6 +12,7 @@ import Login from './Pages/Login/Login/Login';
 import Register from './Pages/Login/Register/Register';
 import Checkout from './Pages/Checkout/Checkout/Checkout';
 import RequireAuth from './Pages/Login/RequireAuth/RequireAuth';
+import AddService from './Pages/Home/AddService/AddService';
 
 function App() {
   return (
@@ -24,6 +25,11 @@ function App() {
         <Route path="/about" element={<About />} />
         <Route path="/login" element={<Login />} />
         <Route path="/register" element={<Register />}></Route>
+        <Route path="/addservice" element={
+          <RequireAuth>
+            <AddService />
+          </RequireAuth>
+        }></Route>
         <Route path="/checkout" element={
           <RequireAuth>
             <Checkout />
