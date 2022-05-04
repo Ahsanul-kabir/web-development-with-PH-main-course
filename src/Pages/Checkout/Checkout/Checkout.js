@@ -32,7 +32,7 @@ const Checkout = () => {
     const handlePlaceOrder = event => {
         event.preventDefault();
         const order = {
-            email: event.target.email.value,
+            email: user.email,
             service: service.name,
             serviceId: serviceId,
             address: event.target.address.value,
@@ -53,9 +53,9 @@ const Checkout = () => {
             <h2>Please Order: {service.name}</h2>
 
             <form onSubmit={handlePlaceOrder}>
-                <input className='w-100 mb-2' type="text" value={user?.displayName} name="name" placeholder='name' required />
+                <input className='w-100 mb-2' type="text" value={user?.displayName} name="name" placeholder='name' required readOnly disabled />
                 <br />
-                <input className='w-100 mb-2' type="email" value={user?.email} name="email" placeholder='email' required />
+                <input className='w-100 mb-2' type="email" value={user?.email} name="email" placeholder='email' required readOnly disabled />
                 <br />
                 <input className='w-100 mb-2' type="text" value={service.name} name="service" placeholder='service' required readOnly disabled />
                 <br />
