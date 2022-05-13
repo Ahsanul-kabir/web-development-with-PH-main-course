@@ -9,7 +9,7 @@ const info = () => {
     return (
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-5 py-5">
             <InfoCard cardTitle="Opening Hours" bgClass='bg-gradient-to-r from-secondary to-primary' img={clock} />
-            <InfoCard cardTitle="Our Location" bgClass='bg-neutral' img={marker} />
+            <InfoCard cardTitle="Our Location" bgClass='bg-[#3A4256]' img={marker} />
             <InfoCard cardTitle="Contract Us" bgClass='bg-gradient-to-r from-secondary to-primary' img={phone} />
         </div>
     );
