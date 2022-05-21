@@ -31,6 +31,7 @@ async function run() {
         app.get('/available', async (req, res) => {
             const date = req.query.date;
 
+            // 74-5 (Recap) Load available time slots based on the date
             // step 1:  get all services
             const services = await serviceCollection.find().toArray();
 
